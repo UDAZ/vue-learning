@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<title>component</title>
+<script src="https://unpkg.com/vue@2.5.17"></script>
+
+<ul id="example">
+  <list-item></list-item>
+</ul>
+
+<script>
+  //コンポーネント
+  Vue.component('list-item',{
+    template:'<li>foo</li>',
+    data: function(){
+      return {contents: 'bar'}
+    }
+  })
+  //ルート'Vue'インスタンスの作成
+  new Vue({
+    el: '#example'
+  })
+</script>
