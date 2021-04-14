@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script src="https://unpkg.com/vue@2.5.17"></script>
+
+<title>コンポーネントは再利用可能です</title>
+
+<div id="fruits-list">
+  <fruits-list-title></fruits-list-title>
+</div>
+
+<script>
+  new Vue({
+    el: "#fruits-list",
+    components: {
+      'fruits-list-title': {
+        template: '<h1>フルーツ一覧</h1>'
+      }
+    }
+  })
+</script>
