@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://unpkg.com/vue@2.5.17"></script>
+    <title>フェードトランジション</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <button @click="isShown = !isShown">表示の切り替え</button>
+      <transition>
+          <p v-show="isShown">Hello, world!</p>
+      </transition>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
