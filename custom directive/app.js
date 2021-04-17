@@ -9,3 +9,5 @@ Vue.directive('fallback-image',{
 new Vue({
   el: '#app'
 })
+
+// Vue.directive('ディレクティブ名',{ディレクティブ定義})
