@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<title>Vue app</title>
+<script src="https://unpkg.com/vue@2.5.17"></script>
+
+<div id="app">
+  <!--定義したカスタムディレクティブを利用する-->
+  <!--logoが読み込めなかったときdummyを読み込む-->
+  <img v-fallback-image.once="noImageURL" src="logo2.png" :alt="altText">
+</div>
+<script src="app.js"></script>
